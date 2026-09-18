@@ -2,7 +2,7 @@
 
 A URL shortener hosted on Cloudflare Pages + Supabase (Postgres).
 
-- **Live site:** https://url-shortner.pages.dev
+- **Live site:** https://url-shortner-66z.pages.dev
 - **Backend storage:** Supabase (table `urls`)
 
 ## Setup
