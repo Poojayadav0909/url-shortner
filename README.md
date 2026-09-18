@@ -2,7 +2,7 @@
 
 A URL shortener hosted on Cloudflare Pages + Supabase (Postgres).
 
-- **Live site:** https://url-shortner-66z.pages.dev
+- **Live site:** https://url-shortner-pooja.pages.dev
 - **Backend storage:** Supabase (table `urls`)
 
 ## Setup
@@ -18,11 +18,11 @@ Open Supabase → SQL Editor → New query, paste the contents of [`sql/1.sql`](
 export PATH="$HOME/.nvm/versions/node/v22.23.1/bin:$PATH"
 
 # Create the project once
-wrangler pages project create url-shortner --production-branch main
+wrangler pages project create url-shortner-pooja --production-branch main
 
 # Set the Supabase secrets used by the redirect function
-echo "https://zfpkjkbdtvwrjwblvzkd.supabase.co" | wrangler pages secret put SUPABASE_URL --project-name url-shortner
-echo "sb_secret_..." | wrangler pages secret put SUPABASE_SERVICE_KEY --project-name url-shortner
+echo "https://zfpkjkbdtvwrjwblvzkd.supabase.co" | wrangler pages secret put SUPABASE_URL --project-name url-shortner-pooja
+echo "sb_secret_..." | wrangler pages secret put SUPABASE_SERVICE_KEY --project-name url-shortner-pooja
 
 # Deploy
 wrangler pages deploy
