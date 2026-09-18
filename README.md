@@ -6,19 +6,19 @@ A URL shortener website built by ** me pooja yadav** that takes long links and t
 
 This is my URL shortner project, where you can paste any long url and get a short link you can share easily. It is a place where I am learning how to connect a frontend with a real database and deploying things in the cloud.
 
-The project is built using **HTML, CSS, JavaScript** for the frontend, and the links are stored in **Supabase** (a Postgres database) and hosted on **Cloudflare Pages**. There is also a small **Rust** backend included using Axum, because im exploring rust too, but the live website does not need it.
+The project is built using **html, css, javascript** for the frontend, and the links are stored in **supabase** (a Postgres database) &hosted on **Cloudflare Pages**. There is also a small **Rust** backend included using Axum, because im exploring rust too, but the live website does not need it.
 
 It works like this: the frontend talks directly to supabase to create a short code for your url, and when anyone visits the short link, a cloudflare function looks up the url, counts the click, and redirects them to the original site.
 
 The project is still a work in progress, and I plan to keep improving it with more features, better design, and more learning as I go.
 
-> Built with curiosity, and a lot of ❤️ by Pooja Yadav**.
+> built with curiosity, and a lot of ❤️ by pooja yadav**.
 
 ## Screenshots
 
 Add at least one screenshot of the url shortner here.
 
-Example:
+eg:
 
 ![Shortener Screenshot](./public/demo1.png)
 ![Shortener Screenshot](./public/demo2.png)
@@ -29,19 +29,19 @@ Example:
 
 Before running the project, make sure you have:
 
-* **Rust** and cargo installed, or **Node.js** with wrangler
+* **rust** and cargo installed, or **Node.js** with wrangler
 * A modern web browser such as Chrome, Safari.
-* **Git** (optional, if cloning the repository)
-* A **Supabase** account with a table called `urls`
+* **git** (optional, if cloning the repository)
+* A **supabase** account with a table called `url`
 
-The live website is hosted on **Cloudflare Pages** using wrangler.
+The live website is hosted on **cloudflare pages** using wrangler.
 
 ### Installing
 
 Clone the repository:
 
 ```bash
-git clone [me](https://github.com/Poojayadav0909/url-shortner)
+git clone [click me ](https://github.com/Poojayadav0909/url-shortner)
 ```
 
 Move into the project folder:
@@ -96,12 +96,11 @@ cargo build
 cargo run
 ```
 
-Make sure you have run the sql file in supabase, otherwise you will see a table not found error.
+make sure you have run the sql file in supabase, otherwise you will see a table not found error
+If wrangler is not installed, install it from the official cloudflare website with node 22 or newer
 
-If wrangler is not installed, install it from the official cloudflare website with node 22 or newer.
-
-Make sure you are running the commands from the project directory.
+Make sure you are running the commands from the project directory
 
 ## License
 
-This project is currently a personal url shortner project. No specific open-source license has been added yet.
+This project is currently a personal url shortner project. No specific open-source license has been added yet
