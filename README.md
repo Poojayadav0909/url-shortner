@@ -20,8 +20,8 @@ Add at least one screenshot of the url shortner here.
 
 Example:
 
-![Shortener Screenshot](./public/screenshot.png)
-![Shortener Screenshot](./public/screenshot1.png)
+![Shortener Screenshot](./public/demo1.png)
+![Shortener Screenshot](./public/demo2.png)
 
 ## Getting Started
 
